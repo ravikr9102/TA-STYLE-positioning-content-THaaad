@@ -49,29 +49,83 @@ table {
 
 /* Custom styles Only */
 
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+ 
+body{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* Header */
 .header{
-    background-color: red;
-    font-size: 30PX;
-    padding: 20PX;  
+    font-size: 0;
+    background-color: gainsboro;
+    padding: 16px 0;
 }
-h1{
-    text-align: left;
+
+.brand img{
+    width: 180px;
 }
-.nav-link{
-    text-align: right;
-    text-decoration: none;
-    font-size: 20px;
-}
-img{
-    width: 25%;
-} 
-  
-footer{
-    background-color: greenyellow;
-    text-align: center;
-    font-size: 30PX;
-    padding: 60PX;  
-}
-.section{
+.brand, .nav{
     display: inline-block;
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    vertical-align: middle;
+}
+.nav{
+    width: calc(100%-180px);
+    font-size: 16px;
+    text-align: right;
+}
+.nav a{
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 32px;
+}
+
+/* Article */
+
+.article-img{
+    width: 100%;
+    padding: 60px 0;
+}
+.col{
+    width: 50%;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+}
+.article{
+    font-size: 0;
+}
+.article-heading{
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+.article-text{
+    font-size: 20px;
+    line-height: 1.7;
+}
+.article-col{
+    padding-right: 32px;
+}
+
+/* Footer */
+
+.footer{
+    text-align: center;
+    padding: 32px 0;
+    background-color: gainsboro;
+}
+.footer a{
+    margin: 0 16px;
+    text-decoration: none;
+    font-size: 24px;
+    color: blue;
+}
