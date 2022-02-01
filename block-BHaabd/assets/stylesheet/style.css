@@ -1,0 +1,114 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styles Only */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: "open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #272727;
+}
+
+/* Container */
+
+.container{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* Header */
+
+.header{
+    text-align: center;
+    color: black;
+    padding: 32px 0;
+}
+h1{
+    font-size: 32px;
+    text-transform: capitalize;
+}
+.section{
+    padding: 20px 0;
+    margin: 0 20px;
+}
+h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+img{
+    width: 400px;
+    height: 300px;
+}
+.col{
+    color: black;
+    float: left;
+    width: 33%;
+    margin: 0 auto;
+}
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+p{
+    line-height: 1.7;
+    margin-right: 8px;
+}
+
+
