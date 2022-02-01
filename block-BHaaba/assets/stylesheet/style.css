@@ -48,7 +48,10 @@ table {
 }
 
 /* Custom Styles Only */
-*{
+
+*,
+*::before,
+*::after{
     box-sizing: border-box;
 }
 
@@ -56,62 +59,10 @@ body{
     font-size: 16px;
     line-height: 1.5;
 }
-
-/* Header */
-
-.header{
-    background: rosybrown;
-    padding: 0 16px;
-}
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 32px;
-}
-h2{
-    font-size: 40px;
-    text-decoration: none;
-    margin: 0 16px;
-}
-.brand, .nav{
-    display: inline-block;
-    vertical-align: middle;
-}
-.nav{
-    font-size: 20px;
-    float: right;
-}
-.nav-link{
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-left: 32px;
-}
-
-/*  Main  */
-
-/* Section */
-
-section{
-    float: left;
-}
-
-img{
-    width: 100%;
-}
-.article{
-    width: 30%;
-    padding: 50px;
-    float: left;
-}
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 50px;
-}
-.nav a{
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 .clearfix::before, .clearfix::after{
     content: "";
@@ -120,4 +71,64 @@ img{
 .clearfix::after{
     clear: both;
 }
+
+
+/* Header */
+
+.header{
+    background: blue;
+    height: 72px;
+    line-height: 72px;
+}
+.brand{
+    float: left;
+    font-size: 32px;
+    color: #ffffff;
+}
+.brand h2{
+    vertical-align: middle;
+}
+.nav{
+    float: right;
+}
+.nav a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Article */
+
+section{
+    padding: 60px 0;
+    background-color: #e9ecfc;
+}
+.article-img{
+    width: 300px;
+}
+.col{
+    float: left;
+    width: 30.33%;
+}
+.footer{
+    background-color: #222946;
+    padding: 32px 0;
+    color: #ffffff;
+}
+.footer small{
+    float: left;
+}
+.footer nav{
+    float: right;
+}
+.footer a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+
+
 
