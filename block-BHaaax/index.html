@@ -1,0 +1,55 @@
+<!-- 
+### Exercise 1
+
+1. Create a simple page having a header, main content, and a footer.
+
+2. Inside the header keep the brand name to the left and all the navigation to the right.
+
+3. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="brand" href="#">
+            <img src="apple.png" alt="barnd logo">
+        </a>
+        <nav class="nav"> 
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <article class="article"> 
+            <div class="container">
+            <div class="col article-col">
+                <h1 class="article-heading">This is the heading of the article</h1>
+                <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, et assumenda deserunt expedita voluptatum, corrupti officia mollitia nisi alias ad ullam vel inventore ipsum magnam veniam. Aperiam, odit neque!</p>
+            </div>
+            <div class="col">
+                <img class="article-img" src="image.jpeg" alt="Nature">
+            </div>
+        </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <nav>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
